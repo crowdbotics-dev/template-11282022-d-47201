@@ -1,15 +1,15 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-const Untitled6 = () => {
-  return <View style={_styles.gvEKBCJr}>
+const Untitled11 = () => {
+  return <View style={_styles.ibgJehCJ}>
       </View>;
 };
 
-export default Untitled6;
+export default Untitled11;
 
 const _styles = StyleSheet.create({
-  gvEKBCJr: {
+  ibgJehCJ: {
     backgroundColor: "#f0f0f1",
     padding: 10,
     position: "relative",
