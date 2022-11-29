@@ -1,15 +1,15 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-const Untitled8 = () => {
-  return <View style={_styles.BMOHvfot}>
+const Untitled7 = () => {
+  return <View style={_styles.CORCvMLc}>
       </View>;
 };
 
-export default Untitled8;
+export default Untitled7;
 
 const _styles = StyleSheet.create({
-  BMOHvfot: {
+  CORCvMLc: {
     backgroundColor: "#f0f0f1",
     padding: 10,
     position: "relative",
