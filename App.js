@@ -66,7 +66,7 @@ const getStore = (globalState) => {
   })
 }
 
-const App = () => {
+const AnotherStuff = () => {
   const global = useContext(GlobalOptionsContext)
   const Navigation = getNavigation(modules, screens, initialRoute)
   const store = getStore(global)
@@ -83,4 +83,4 @@ const App = () => {
   )
 }
 
-export default App
+export default AnotherStuff
