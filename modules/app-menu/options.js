@@ -1,4 +1,3 @@
-
 const styles = StyleSheet.create({
   hr: {
     marginTop: 20,
