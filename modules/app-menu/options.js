@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+
 const styles = StyleSheet.create({
   hr: {
     marginTop: 20,
