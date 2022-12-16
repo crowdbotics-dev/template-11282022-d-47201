@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, StyleSheet, View, SafeAreaView, TextInput, Switch, ScrollView } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
 
 const AccountSettingsScreen = params => {
   const [name, setName] = useState("");
@@ -10,54 +10,7 @@ const AccountSettingsScreen = params => {
   const [smsNotifications, setSmsNotifications] = useState(false);
   const [deactivateAccount, setDeactivateAccount] = useState(false);
   return <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <View style={styles.subContainer}>
-          <Text style={styles.subText}>Subscription</Text>
-          <View style={styles.subPallete}>
-            <View style={styles.planDes}>
-              <Text style={[styles.fnt25, styles.boldText]}>Plan</Text>
-              <Text style={styles.fnt16}>Description</Text>
-            </View>
-            <View style={styles.subPricing}>
-              <Text style={[styles.fnt25, styles.boldText]}>$14.99 </Text>
-              <Text style={styles.fnt16}>per month</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.billingContainer}>
-          <Text style={styles.billingText}>Billing informations</Text>
-          <View style={styles.nameInput}>
-            <Text style={styles.inputText}>Full Name</Text>
-            <TextInput style={styles.input} placeholder="Enter your full name" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={name} onChangeText={text => setName(text)} />
-          </View>
-          <View style={styles.nameInput}>
-            <Text style={styles.inputText}>Email Adress</Text>
-            <TextInput style={styles.input} placeholder="Enter your Email Adress" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={email} onChangeText={text => setEmail(text)} />
-          </View>
-          <View style={styles.nameInput}>
-            <Text style={styles.inputText}>Card number</Text>
-            <TextInput style={styles.input} placeholder="Enter your Card Number" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} value={cardNumber} onChangeText={text => setCardNumber(text)} />
-          </View>
-        </View>
-        <View style={styles.togglesContainer}>
-          <View style={styles.toggle}>
-            <Text style={styles.toggleText}>Notifications</Text>
-            <Switch style={styles.toggleSwitch} value={notifications} onValueChange={value => setNotifications(value)} />
-          </View>
-          <View style={styles.toggle}>
-            <Text style={styles.toggleText}>Email Notifications</Text>
-            <Switch style={styles.toggleSwitch} value={emailNotifications} onValueChange={value => setEmailNotifications(value)} />
-          </View>
-          <View style={styles.toggle}>
-            <Text style={styles.toggleText}>SMS Notifications</Text>
-            <Switch style={styles.toggleSwitch} value={smsNotifications} onValueChange={value => setSmsNotifications(value)} />
-          </View>
-          <View style={styles.toggle}>
-            <Text style={styles.toggleText}>Deactivate Account</Text>
-            <Switch style={styles.toggleSwitch} value={deactivateAccount} onValueChange={value => setDeactivateAccount(value)} />
-          </View>
-        </View>
-      </ScrollView>
+      
     </SafeAreaView>;
 };
 
